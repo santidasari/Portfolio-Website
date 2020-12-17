@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section
+{
+   padding: 160px;
+}
+
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: lightpink;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.banner h2
+{
+    font-size: 4em ;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner .headshot
+{ 
+  border:17px solid lightskyblue;
+  border-radius: 50%;
+  background-color: lightskyblue;
+  margin-left:auto;
+}
+
+.banner h2 span
+{
+    font-size: 1.5 em;
+    font-weight: 700;
+}
+
+.banner h3 
+{
+    font-size: 1.5em;
+    color: black;
+    font-weight: 500;
+}
+
+/* about button styling */
+.button
+{
+    position: relative;
+    background: lightskyblue;
+    display: inline-block;
+    color:black;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+
+/*navbar styling */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 35px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.5s;
+}
+header.sticky
+{
+    background: black;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20p x rgba(0,0,0,0.1);
+}
+header .logo
+{
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: white;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position:relative;
+    display: inline-block;
+    margin: 0 15px;
+    color:black;
+    text-decoration: none;
+}
+header ul li a:hover
+{
+    border-bottom: 2px solid lightskyblue;
+}
+header.sticky ul li a
+{
+   color: white;
+}
+
+/* about me styling */
+.heading
+{
+    widows: 100%;
+    text-align:center;
+    margin-bottom: 30px;
+    color:black;
+}
+.heading h2 
+{
+    font-weight: 650;
+    font-size: 40px;
+}
+.content
+{
+    display: flex;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left:auto;
+    justify-content: space-between;
+}
+.contentBox
+{   
+    background-color:lightskyblue;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    box-shadow: 0 15px 35px gray, 0 5px 15px gray;
+}
+
+/*work section style */
+.work
+{
+    background: lightpink;
+}
+
+.work .content
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction:row;
+   
+}
+
+.work .content .workBox
+{
+    background:white;
+    padding: 40px 20px;
+    max-width: 360px;
+    margin: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.work .content .workBox:hover
+{
+    background: lightskyblue;
+}
+
+/* research paper button */
+a.paper
+ {
+    text-decoration:none;
+    color:white;
+    background: black;
+     margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+     
+ }
+
+ a.paper:visited
+ {
+    text-decoration:none;
+    color: white;
+ }
+
+ /*resume styling */
+ .resume .content
+ {
+    justify-content: center;
+ }
+
+ /* contact styling */
+ .contact
+ {
+     background: lightpink;
+ }
+.container
+{   
+    display: flex;
+    max-width: 600px;
+    max-height: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:40px;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    background-size: 1em;
+    box-shadow: 0 15px 35px gray, 0 5px 15px gray;
+
+}
+.container .form-group
+{
+    margin-bottom:1.5em;
+}
+.container .form-label
+{
+    font-size:.75em;
+    color:black;
+    display:block;
+    opacity:0;
+    transition: all .3s;
+    transform:translateX(-50px);
+}
+.container .form-control
+{
+    box-shadow:none;
+    border-radius:0;
+    border-color: lightskyblue;
+    border-style: none none solid none;
+    width:100%;
+    font-size:1.25em;
+    transition:all .6s;
+}
+.container .form-control::placeholder{
+    color: lightgray;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color:black;
+    outline:none;
+}
+.form-group:focus-within
+{
+    transform:scale(1.1, 1.1);
+}
+
+.form-control:invalid:focus
+{
+border-color:red;
+}
+
+.btn
+{   
+    width: 165px;
+    background: 0 0 lightskyblue;
+    border:1px solid aaa;
+    
+    color:black;
+    font-size:1em;
+    padding: 10 50px;
+    text-transform: uppercase;
+}
+.container .btn:hover
+{
+    border-color:black;
+}
+textarea
+{
+    resize:none;
+}
+
+ .focused > .form-label
+{
+ opacity:1;
+ transform: translateX(0px);
+}
+
+.form-invalid{
+    outline: 1px solid red !important;
+}
+
+.contact h3
+{
+    text-align:center;
+    justify-content: center;
+}
